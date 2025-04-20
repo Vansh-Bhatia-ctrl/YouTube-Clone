@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-customblue-100: #0b2e92;
+  --color-customblack-100: #000000;
+  --color-customwhite-100: #ffffff;
+  --color-customgray-100: #282828;
+}
+
+@layer utilities {
+  .text-csm {
+    font-size: 10px;
+  }
+
+  @media (min-width: 540px) {
+    .hide-after-540 {
+      display: none !important;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+    .text-csm {
+      font-size: 14px; 
+    }
+  }
+
+  .text-cmd {
+    font-size: 10px;
+  }
+
+
+  .font-orbitron {
+    font-family: "Orbitron", sans-serif;
+  }
+}
