@@ -1,12 +1,12 @@
 import Videos from "../data/videos.json";
 import { UserIcon } from "@heroicons/react/24/outline";
-import SideBar from "./SideBar";
+import SideBar from "../components/SideBar.jsx";
 
 export default function VideosList() {
   return (
     <>
       <div className="flex md:w-screen lg:w-screen xl:w-screen overflow-x-hidden">
-      <SideBar className="hide-sidebar-340-sm" />
+        <SideBar className="hide-sidebar-340-sm" />
         <div className="min-h-screen w-screen bg-customblack-100 p-4 md:grid md:grid-cols-3 md:gap-4 lg:grid lg:grid-cols-4 lg:overflow-x-hidden sm:grid sm:grid-cols-2 sm:gap-4 ">
           {Videos.map((video) => (
             <div

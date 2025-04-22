@@ -9,6 +9,7 @@ import {
   HandThumbUpIcon,
   ArrowDownIcon,
 } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 export default function SideBar({ className = "" }) {
   return (
@@ -17,15 +18,23 @@ export default function SideBar({ className = "" }) {
     >
       {/*SideBar header content*/}
       <div className="border-b-2 border-b-customgray-100 ml-2 mr-2">
-        <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[50px]">
-          <HomeIcon class="h-6 w-6 text-customwhite-100" />
-          <p className="font-semibold text-md text-customwhite-100">Home</p>
-        </div>
+        <NavLink to="/">
+          <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[50px]">
+            <HomeIcon className="h-6 w-6 text-customwhite-100" />
+            <button className="font-semibold text-md text-customwhite-100 cursor-pointer">
+              Home
+            </button>
+          </div>
+        </NavLink>
 
-        <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px]">
-          <VideoCameraIcon class="h-6 w-6 text-customwhite-100" />
-          <p className="font-semibold text-md text-customwhite-100">Videos</p>
-        </div>
+        <NavLink to="/videos">
+          <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px]">
+            <VideoCameraIcon class="h-6 w-6 text-customwhite-100" />
+            <button className="font-semibold text-md text-customwhite-100 cursor-pointer">
+              Videos
+            </button>
+          </div>
+        </NavLink>
 
         <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px] mb-4">
           <RssIcon class="h-6 w-6 text-customwhite-100" />

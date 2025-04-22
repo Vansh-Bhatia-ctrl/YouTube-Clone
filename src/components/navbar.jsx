@@ -4,21 +4,24 @@ import {
   BellIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="bg-customblack-100 max-w-screen h-[46px] flex flex-row md:h-[56px] lg:h-[64px] justify-between items-center px-4 lg:w-screen md:w-screen sm:w-screen" >
+    <nav className="bg-customblack-100 max-w-screen h-[46px] flex flex-row md:h-[56px] lg:h-[64px] justify-between items-center px-4 lg:w-screen md:w-screen sm:w-screen">
       <div className="flex items-center space-x-2">
         <div className="flex items-center justify-center">
           <Bars3Icon className="h-6 w-[17px] md:w-8 text-gray-500 cursor-pointer md:h-6 lg:h-7" />
         </div>
-        <div className="flex items-center justify-center md:h-[56px]">
-          <img
-            src="/youtubelogo.jpg"
-            alt="YouTube Logo"
-            className="h-[40px] w-auto sm:h-[50px] lg:h-[64px] object-contain overflow-x-hidden"
-          />
-        </div>
+        <NavLink to="/">
+          <div className="flex items-center justify-center md:h-[56px]">
+            <img
+              src="/youtubelogo.jpg"
+              alt="YouTube Logo"
+              className="h-[40px] w-auto sm:h-[50px] lg:h-[64px] object-contain overflow-x-hidden"
+            />
+          </div>
+        </NavLink>
       </div>
 
       <div className="flex items-center space-x-2">
