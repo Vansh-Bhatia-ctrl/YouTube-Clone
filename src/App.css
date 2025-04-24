@@ -5,6 +5,7 @@
   --color-customblack-100: #000000;
   --color-customwhite-100: #ffffff;
   --color-customgray-100: #282828;
+  --color-customgray-200: #202020;
 }
 
 @layer utilities {
@@ -20,7 +21,7 @@
 
   @media (min-width: 768px) {
     .text-csm {
-      font-size: 14px; 
+      font-size: 14px;
     }
   }
 
@@ -31,7 +32,6 @@
   .font-orbitron {
     font-family: "Orbitron", sans-serif;
   }
-
 
   @media (min-width: 140px) and (max-width: 767px) {
     .hide-sidebar-340-sm {
