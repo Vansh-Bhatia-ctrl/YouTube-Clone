@@ -11,11 +11,11 @@ import VideosData from "../data/videos.json";
 
 export default function Videos() {
   return (
-    <div className="min-h-screen w-screen bg-customblack-100 flex justify-center items-start">
-      <div className="w-full max-w-4xl aspect-video">
+    <div className="min-h-screen w-screen bg-customblack-100 flex justify-center items-start flex-col gap-72 lg:flex lg:flex-row lg:gap-0">
+      <div className="w-full h-full max-w-4xl aspect-video lg:ml-4 lg:w-[1500px]">
         {/*Video details*/}
         <iframe
-          className="w-full h-full"
+          className="w-full h-full md:mt-2"
           src="https://www.youtube.com/embed/VPvVD8t02U8"
           frameBorder="0"
           allowFullScreen
@@ -92,7 +92,7 @@ export default function Videos() {
         </div>
 
         {/*Comment section*/}
-        <div className="bg-customgray-100 w-auto mr-2 flex p-[10px] ml-2 mt-4 rounded-2xl flex-col">
+        <div className="bg-customgray-100 w-auto mr-3 flex p-[10px] ml-2 mt-4 rounded-2xl flex-col md:mr-6 md:ml-4">
           <div className="flex gap-2 items-center">
             <p className="text-customwhite-100 text-sm">Comments</p>
             <p className="text-gray-400 text-sm">354</p>
@@ -107,28 +107,37 @@ export default function Videos() {
             </p>
           </div>
         </div>
+      </div>
 
-        {/*Recomeneded videos section */}
+      {/*Recomeneded videos section */}
+      <div className="bg-customblack-100">
         {VideosData.map((video) => (
-          <div key={video.id} className="mt-2 w-full max-w-4xl aspect-video">
-            <iframe
-              className="w-full h-full"
-              src={`https://www.youtube.com/embed/${video.videoId}`}
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
+          <div
+            key={video.id}
+            className="mt-2 w-full max-w-4xl md:flex md:flex-row md:p-4 cursor-pointer hover:bg-customgray-100 lg:ml-2 rounded-md"
+          >
+            <div className="aspect-video md:w-1/2 md:flex-shrink-0 lg:flex lg:justify-start lg:items-start">
+              <iframe
+                className="w-full h-full md:rounded-md"
+                src={`https://www.youtube.com/embed/${video.videoId}`}
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </div>
             <div className="gap-2 flex items-start justify-start">
-              <div className="flex-shrink-0 rounded-full bg-customgray-100 p-2 w-[40px] ml-[5px] mt-4 flex items-start justify-start">
-                <UserIcon className="h-6 w-6 text-gray-500" />
+              <div className="flex-shrink-0 rounded-full bg-customgray-100 p-2 w-[40px] ml-[5px] mt-4 flex items-start justify-start hide-usericon-sm">
+                <UserIcon className="h-6 w-6 text-gray-500 " />
               </div>
               <div className="p-2 flex flex-col mb-2">
                 <p className="text-customwhite-100 font-semibold">
                   {video.title}
                 </p>
-                <div className="flex gap-2">
-                  <p className="text-gray-500 text-sm">freeCodeCamp .</p>
-                  <p className="text-gray-500 text-sm">4.1K views . </p>
-                  <p className="text-gray-500 text-sm">1 day ago</p>
+                <div className="flex gap-2 md:flex md:flex-col md:md:gap-0">
+                  <p className="text-gray-500 text-sm">freeCodeCamp </p>
+                  <div className="flex flex-row gap-2">
+                    <p className="text-gray-500 text-sm">4.1K views </p>
+                    <p className="text-gray-500 text-sm">1 day ago</p>
+                  </div>
                 </div>
               </div>
             </div>

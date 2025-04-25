@@ -38,4 +38,11 @@
       display: none !important;
     }
   }
+
+  @media (min-width: 767px)  {
+    .hide-usericon-sm {
+      display: none !important;
+    }
+  }
+
 }
