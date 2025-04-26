@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "React JS Full Course for Beginners | Complete All-in-One Tutorial",
+    "thumbnail": "https://img.youtube.com/vi/bMknfKXIFA8/maxresdefault.jpg",
+    "videoId": "bMknfKXIFA8"
+  },
+  {
+    "id": "2",
+    "title": "JavaScript Crash Course",
+    "thumbnail": "https://img.youtube.com/vi/hdI2bqOjy3c/maxresdefault.jpg",
+    "videoId": "hdI2bqOjy3c"
+  },
+  {
+    "id": "3",
+    "title": "Node.js Tutorial for Beginners",
+    "thumbnail": "https://img.youtube.com/vi/TlB_eWDSMt4/maxresdefault.jpg",
+    "videoId": "TlB_eWDSMt4"
+  }
+]

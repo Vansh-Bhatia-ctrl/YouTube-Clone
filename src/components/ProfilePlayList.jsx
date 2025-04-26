@@ -1,17 +1,19 @@
 import { UserIcon } from "@heroicons/react/24/outline";
-import Videos from "../data/videos.json";
+import smallVideos from "../data/smallvideodata.json";
 
 export default function ProfilePlayList() {
   return (
     <div className="p-4">
       <div className="flex justify-between">
-        <p className="text-customwhite-100 font-semibold mb-2">Playlists</p>
+        <p className="text-customwhite-100 font-semibold mb-2 text-xl md:text-2xl">
+          Playlists
+        </p>
         <button className="text-customwhite-100 text-sm  mb-2 font-semibold">
           View all
         </button>
       </div>
       <div className="flex overflow-x-auto  gap-4">
-        {Videos.map((video) => (
+        {smallVideos.map((video) => (
           <div key={video.id} className="min-w-[200px] w-[200px] flex-shrink-0">
             <iframe
               className="w-full aspect-video rounded-lg"

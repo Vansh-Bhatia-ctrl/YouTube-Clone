@@ -5,8 +5,10 @@ export default function WatchLater() {
   return (
     <div className="p-4">
       <div className="flex justify-between">
-        <div className="flex flex-col ">
-          <p className="text-customwhite-100 font-semibold">Watch later</p>
+        <div className="flex flex-col mb-2">
+          <p className="text-customwhite-100 font-semibold text-xl md:text-2xl">
+            Watch later
+          </p>
           <p className="text-gray-500 text-sm">67 videos</p>
         </div>
         <button className="text-customwhite-100 text-sm  mb-2 font-semibold">

@@ -5,7 +5,7 @@ export default function ProfileHistorySection() {
   return (
     <div className="p-4">
       <div className="flex justify-between">
-        <p className="text-customwhite-100 font-semibold mb-2">History</p>
+        <p className="text-customwhite-100 font-semibold mb-2 text-xl md:text-2xl">History</p>
         <button className="text-customwhite-100 text-sm  mb-2 font-semibold">
           View all
         </button>
