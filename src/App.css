@@ -45,4 +45,38 @@
     }
   }
 
+  /* globals.css */
+
+@media (min-width: 640px) { /* sm breakpoint */
+  ::-webkit-scrollbar {
+    height: 8px; /* You can adjust thickness */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000; /* Black background */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Thumb color (you can make it lighter or darker) */
+    border-radius: 10px;
+  }
+}
+
+/* Optional for md screens (768px) onwards */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+  }
+}
+
+
 }

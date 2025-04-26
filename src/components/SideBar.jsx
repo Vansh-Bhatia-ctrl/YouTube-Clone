@@ -46,10 +46,12 @@ export default function SideBar({ className = "" }) {
 
       {/*SideBar middle content*/}
       <div className="border-b-2 border-b-customgray-100 ml-2 mr-2 mt-4">
+      <NavLink to="/yourprofile">
         <div className="flex items-center gap-2 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[50px]">
           <p className="text-customwhite-100 font-semibold text-lg">You</p>
           <ChevronRightIcon class="h-6 w-6 text-gray-500" />
         </div>
+        </NavLink>
 
         <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px]">
           <div className="relative w-6 h-6">

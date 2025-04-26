@@ -13,6 +13,7 @@ export default function Videos() {
   return (
     <div className="min-h-screen w-screen bg-customblack-100 flex justify-center items-start flex-col gap-72 lg:flex lg:flex-row lg:gap-0">
       <div className="w-full h-full max-w-4xl aspect-video lg:ml-4 lg:w-[1500px]">
+        
         {/*Video details*/}
         <iframe
           className="w-full h-full md:mt-2"
