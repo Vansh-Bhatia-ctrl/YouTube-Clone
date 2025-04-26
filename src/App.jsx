@@ -5,6 +5,7 @@ import RootLayout from "./pages/RootLayout";
 import Videos from "./pages/Videos";
 import YourProfile from "./pages/YourProfile";
 import Subscriptions from "./pages/Subscriptions";
+import History from "./pages/History";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { path: "videos", element: <Videos /> },
       { path: "yourprofile", element: <YourProfile /> },
       { path: "subscriptions", element: <Subscriptions /> },
+      { path: "history", element: <History /> },
     ],
   },
 ]);

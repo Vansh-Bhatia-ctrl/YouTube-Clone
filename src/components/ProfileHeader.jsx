@@ -5,7 +5,7 @@ import {
 
 export default function ProfileHeader() {
   return (
-    <div className="p-4 flex gap-2">
+    <div className="p-4 flex gap-4">
       <div className="bg-customgray-100 rounded-full w-20 h-20 md:w-32 md:h-32 flex items-center justify-center">
         <UserIcon className="h-10 w-10 text-gray-500 md:h-18 md:w-18" />
       </div>
