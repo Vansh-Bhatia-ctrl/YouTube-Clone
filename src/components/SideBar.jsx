@@ -56,22 +56,26 @@ export default function SideBar({ className = "" }) {
         </NavLink>
 
         <NavLink to="/history">
-        <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px]">
-          <div className="relative w-6 h-6">
-            <ClockIcon className="absolute left-0 top-0 w-6 h-6 text-customwhite-100" />
+          <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px]">
+            <div className="relative w-6 h-6">
+              <ClockIcon className="absolute left-0 top-0 w-6 h-6 text-customwhite-100" />
+            </div>
+            <p className="font-semibold text-md text-customwhite-100">
+              History
+            </p>
           </div>
-          <p className="font-semibold text-md text-customwhite-100">History</p>
-        </div>
         </NavLink>
 
-        <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px]">
-          <div className="relative w-6 h-6">
-            <ListBulletIcon className="absolute left-0 top-0 w-6 h-6 text-customwhite-100" />
+        <NavLink to="/playlist">
+          <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px]">
+            <div className="relative w-6 h-6">
+              <ListBulletIcon className="absolute left-0 top-0 w-6 h-6 text-customwhite-100" />
+            </div>
+            <p className="font-semibold text-md text-customwhite-100">
+              Playlists
+            </p>
           </div>
-          <p className="font-semibold text-md text-customwhite-100">
-            Playlists
-          </p>
-        </div>
+        </NavLink>
 
         <div className="flex items-center gap-11 p-2 hover:bg-customgray-100 hover:rounded-md cursor-pointer h-[60px]">
           <BookmarkIcon class="h-6 w-6 text-customwhite-100" />

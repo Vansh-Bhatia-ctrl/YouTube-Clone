@@ -6,6 +6,7 @@ import Videos from "./pages/Videos";
 import YourProfile from "./pages/YourProfile";
 import Subscriptions from "./pages/Subscriptions";
 import History from "./pages/History";
+import PlayList from "./pages/PlayList";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "yourprofile", element: <YourProfile /> },
       { path: "subscriptions", element: <Subscriptions /> },
       { path: "history", element: <History /> },
+      { path: "playlist", element: <PlayList /> },
     ],
   },
 ]);
